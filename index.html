@@ -11,32 +11,34 @@
   <body>
     <div class="container">
       <h1>Furst World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city</option>
-        <option value="">London</option>
-        <option value="">Kauai</option>
-        <option value="">Madrid</option>
-        <option value="">Melbourne</option>
+        <option value="Europe/London">London</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Australia/Melbourne">Melbourne</option>
       </select>
+      <div id="cities">
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris 🍷</h2>
+            <div class="date"></div>
+          </div>
 
-      <div class="city" id="paris">
-        <div>
-          <h2>Paris 🍷</h2>
-          <div class="date"></div>
+          <div class="time"></div>
         </div>
-
-        <div class="time"></div>
-      </div>
-      <div class="city" id="argentina">
-        <div>
-          <h2>Argentina 💃</h2>
-          <div class="date"></div>
+        <div class="city" id="argentina">
+          <div>
+            <h2>Argentina 💃</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
-      This project was coded By <strong></strong> and is open-sourced on
+      This project was coded By <strong>Tanya Furst</strong> and is open-sourced
+      on
       <a
         href="https://github.com/furstcontact/furst-world-clock"
         target="_blank"
