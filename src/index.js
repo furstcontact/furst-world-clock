@@ -8,14 +8,13 @@ function updateTime() {
   parisDateElement.innerHTML = moment().format("dddd, MMMM Do YYYY");
   parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 
-  let honoluluElement = document.querySelector("#honolulu");
-  let honoluluDateElement = honoluluElement.querySelector(".date");
-  let honoluluTimeElement = honoluluElement.querySelector(".time");
+  let argentinaElement = document.querySelector("#argentina");
+  let argentinaDateElement = argentinaElement.querySelector(".date");
+  let argentinaTimeElement = argentinaElement.querySelector(".time");
 
-  let honoluluTime = moment().tz("Pacific/Honolulu");
-
-  honoluluDateElement.innerHTML = moment().format("dddd, MMMM Do YYYY");
-  honoluluTimeElement.innerHTML = honoluluTime.format(
+  let argentinaTime = moment().tz("America/Argentina/Buenos_Aires");
+  argentinaDateElement.innerHTML = moment().format("dddd, MMMM Do YYYY");
+  argentinaTimeElement.innerHTML = argentinaTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 }
